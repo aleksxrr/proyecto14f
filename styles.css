@@ -1,0 +1,75 @@
+:root {
+    --heart-color: #ff5873;
+    --hover-color: #C1275C;
+    --background-color: #ebc8c0; /* Color de fondo fijo */
+    --white: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--heart-color);
+}
+
+.card {
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center; /* Alinear contenido al centro */
+    width: 300px;
+    background-color: white; /* Fondo blanco para la tarjeta */
+}
+
+.portada {
+    background-image: url('images/portada.gif');
+    background-size: cover; /* Cubrir el contenedor sin distorsión */
+    background-position: center; /* Centrar la imagen dentro del contenedor */
+    width: 100%; /* Ajustar al ancho de la tarjeta */
+    height: 200px; /* Altura fija para la imagen de portada */
+    margin-bottom: 15px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre los botones */
+    margin-top: 20px;
+}
+
+.button {
+    background-color: var(--heart-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button.button__negative {
+    background-color: var(--white);
+    color: var(--heart-color);
+    border: 1px solid var(--heart-color);
+}
+
+.button.button__error {
+    display: none;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.text {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.audio {
+    margin-top: 20px;
+}
